@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>BookGuru.com</title>
+        <link rel="shortcut icon" href="Imagenes/Logo3.png">
+        <link rel="stylesheet" href="css/dise.css">
+        <script src="javascript/javas.js"></script>   
+    </head>
+    <body style="background-image: url(Imagenes/fondo1.jpg); background-repeat: no-repeat; font-family: Arial">
+        <header>
+            <img src="Imagenes/Logo3.png" alt="Logo" class="header-logo">
+            <h1 style="color: rgb(139, 139, 138); position: absolute; right: 13cm; top: 0cm;">BookGuru.com</h1>
+           <FORM name="formulario" >
+                    <SELECT name="bus"> 
+                            <option value="1">La midad Obscura</option>
+                            <option value="2">Harry Potter</option>
+                            <option value="3">Señor de los anillos</option>
+                            <option value="4">Ready player one</option>
+                            <option value="5">Call of cthulhu</option>
+                            <option value="6">Maze Runner</option>
+                        </SELECT>
+            </FORM>
+            <input type="submit" value="Buscar" class="bts" onclick="buscar()">
+        </header></br>
+        <div class="slide-contenedor">
+        <div class="miSlider"><a href="https://www.amazon.com.mx/mitad-oscura-Stephen-King/dp/6073125240" target = "_blank"><img src="Imagenes/midobs.jpg" alt="midobs" class="bok"></a></div>
+        <div class="miSlider"><a href="https://www.amazon.com.mx/Harry-Potter-y-piedra-filosofal/dp/8498384389/ref=sr_1_33?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ML7RX6U5I4U5&keywords=harry+potter&qid=1589490631&sprefix=harry+po%2Caps%2C275&sr=8-33" target = "_blank"><img src="Imagenes/Hpbok.jpg" alt="Harry" class="bok"></a></div>
+        <div class="miSlider"><a href="https://www.amazon.com.mx/Se%C3%B1or-Anillos-Comunidad-Anillo-Booket/dp/8445000667/ref=sr_1_3?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2B5YUOWNWWY9R&keywords=se%C3%B1or+de+los+anillos+libro&qid=1589490807&sprefix=se%C3%B1or+de+los+anillos+l%2Caps%2C219&sr=8-3" target = "_blank"><img src="Imagenes/snanillo.jpg" alt="snanillo" class="bok"></a></div>
+        <div class="miSlider"><a href="https://www.amazon.com.mx/Ready-player-one-Ernest-Cline/dp/6075293868/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=PMNQKJXTEY9E&keywords=ready+player+one+libro&qid=1589490830&sprefix=ready%2Caps%2C229&sr=8-1" target = "_blank"><img src="Imagenes/Reone.jpg" alt="rone" class="bok"></a></div>
+        <div class="miSlider"><a href="https://www.amazon.com.mx/Call-Cthulhu-Rpg-Keeper-Rulebook/dp/1568824300/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=ZVVICA7RU36R&keywords=call+of+cthulhu&qid=1589490860&sprefix=call+of+c%2Caps%2C235&sr=8-1" target = "_blank"><img src="Imagenes/call.jpg" alt="call" class="bok"></a></div>
+        <div class="miSlider"><a href="https://www.amazon.com.mx/CORRER-%C3%93-MORIR-MAZE-RUNNER/dp/6077547328/ref=sr_1_4?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3OOA77VK7HYPO&keywords=maze+runner&qid=1589490885&sprefix=maze+r%2Caps%2C225&sr=8-4" target = "_blank"><img src="Imagenes/Mazer.jpg" alt="mazer" class="bok"></a></div>
+        <div class=" direcciones">
+            <a href="#" class="atras" onclick="avanzaSlide(-1)"> &#10094; </a>
+            <a href="#" class="adelante" onclick="avanzaSlide(1)"> &#10095; </a>
+        </div>
+        <div class="barras">
+            <span class="barra active" onclick="posicionSide(1)"></span>
+            <span class="barra" onclick="posicionSide(2)"></span>
+            <span class="barra" onclick="posicionSide(3)"></span>
+            <span class="barra" onclick="posicionSide(4)"></span>
+            <span class="barra" onclick="posicionSide(5)"></span>
+            <span class="barra" onclick="posicionSide(6)"></span>
+        </div>
+        </div>  
+       
+        <input type="submit" value="sipnosis" class="bts" style="position: absolute; right: 17cm; text-decoration: none;" onclick="modale()">
+        
+
+        <div id="modal1" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header">
+                        <h2>La Mitad Obscura</h2>
+                        <input type="submit" class="close" id="close1" value="&times;">
+                    </div>
+                    <div class="modal-body">
+                        <p>Sinopsis</p>
+                        <p>Cuando Thad Beaumont en pleno bloqueo creativo, después de que su novela Las súbitas bailarinas optara al Premio Nacional de Literatura y lo perdiera, decidió seguir los consejos de su mujer y publicar una serie de thrillers retorcidos y sangrientos bajo el seudónimo de George Stark, no pensó, ni por asomo, que le sería tan difícil "deshacerse" de ese otro yo que, no se explicaba cómo, había dejado de ser ficticio.</p></div>
+                    <div class="footer">
+                        <h3>King, S. (2016). The Dark Half (Reissue ed.). New york, USA: Gallery Books.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header">
+                        <h2>Harry Potter</h2>
+                        <input type="submit" class="close" id="close2" value="&times;">
+                    </div>
+                    <div class="modal-body">
+                        <p>Sinopsis</p>
+                        <p>El día de su cumpleaños, Harry Potter descubre que es hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. Debe asistir a una famosa escuela de magia y hechicería, donde entabla una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</p></div>
+                    <div class="footer">
+                        <h3>Rowling, J. K., & GrandPré, M. (2009). Harry Potter Paperback Box Set (Books 1-7) (Slp ed.). Zapopan, Jalisco: Arthur A. Levine Books.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header">
+                        <h2>El Señor de los anillos</h2>
+                        <input type="submit" class="close" id="close3" value="&times;">
+                    </div>
+                    <div class="modal-body">
+                        <p>Sinopsis</p>
+                        <p>La novela narra el viaje del protagonista principal, Frodo Bolsón, hobbit de la Comarca, para destruir el Anillo Único y la consiguiente guerra que provocará el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el Señor oscuro Sauron.</p></div>
+                    <div class="footer">
+                        <h3>Tolkien, J. R. R., & Lee, A. (1988). The Lord of the Rings (1st ed.). london, UK: Houghton Mifflin.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header">
+                        <h2>Ready Player One</h2>
+                        <input type="submit" class="close" id="close4" value="&times;">
+                    </div>
+                    <div class="modal-body">
+                        <p>Sinopsis</p>
+                        <p>Estamos en el año 2044 y, como el resto de la humanidad, Wade Watts prefiere mil veces el videojuego de OASIS al cada vez más sombrío mundo real. Se asegura que esconde las diabólicas piezas de un rompecabezas cuya resolución conduce a una fortuna incalculable.</p></div>
+                    <div class="footer">
+                        <h3>Cline, E. (2012). Ready Player One: A Novel (32089th ed.). New york, USA: Ballantine Books.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal5" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header">
+                        <h2>call of cthulhu</h2>
+                            <input type="submit" class="close" id="close5" value="&times;">
+                    </div>
+                    <div class="modal-body">
+                        <p>Sinopsis</p>
+                        <p>La llamada de Cthulhu es una historia corta del autor estadounidense H.P. Lovecraft, publicada por primera vez en la revista Weird Tales en 1928. Un hombre descubre las notas de su difunto tío y se ve envuelto en una conspiración que involucra a un antiguo dios oceánico y sus violentos seguidores.
+                        </p></div>
+                    <div class="footer">
+                        <h3>Petersen, S., Willis, L., & Mason, M. (2016). Call of Cthulhu Rpg Keeper Rulebook: Horror Roleplaying in the Worlds of H.p. Lovecraft (Call of Cthulhu Roleplaying) (7th ed. ed.). New York, USA: Chaosium.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal6" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header">
+                        <h2>Maze Runner</h2>
+                        <input type="submit" class="close" id="close6" value="&times;">
+                    </div>
+                    <div class="modal-body">
+                        <p>Sinopsis</p>
+                        <p>Thomas es un adolescente cuya memoria fue borrada y que ha sido encerrado junto a otros chicos de su edad en un laberinto plagado de monstruos y misterios. Para sobrevivir, tendrá que adaptarse a las normas y a los demás habitantes del laberinto.</p></div>
+                    <div class="footer">
+                        <h3>Dashner, J. (s. f.). The Maze Runner (Book 1) (Reprint ed.). New york, USA: Delacorte Press.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
